@@ -31,3 +31,8 @@ add2[2].style.background='green'
 for (let i=0;i<add2.length;i++){
     add2[i].style.fontWeight = 'bold';
 }
+//tag name
+let add3 =document.getElementsByTagName('li')
+for (let i=0;i<add3.length;i++){
+    add3[i].style.color = 'red';
+}

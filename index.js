@@ -36,3 +36,9 @@ let add3 =document.getElementsByTagName('li')
 for (let i=0;i<add3.length;i++){
     add3[i].style.color = 'red';
 }
+
+//querySelector
+
+let add4 = document.querySelectorAll('li')
+add4[1].style.background='green'
+add4[3].style.visibility="hidden"

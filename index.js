@@ -24,3 +24,10 @@ add1[0].innerHTML='<b>Add items'
 //for (let i=0;i<add1.length;i++){   //use for loop for multiple change
  //   add1[i].innerText="Add items"
 //} 
+
+let add2 =document.getElementsByClassName('list-group-item')
+//console.log(add2)
+add2[2].style.background='green'
+for (let i=0;i<add2.length;i++){
+    add2[i].style.fontWeight = 'bold';
+}

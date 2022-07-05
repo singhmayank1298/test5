@@ -38,7 +38,16 @@ for (let i=0;i<add3.length;i++){
 }
 
 //querySelector
-ddd
+
 let add4 = document.querySelectorAll('li')
 add4[1].style.background='green'
 add4[3].style.visibility="hidden"
+
+//travling the Dom
+
+//parentNode or Element
+let itemlist =document.querySelector("#items")
+//1=parent node
+console.log(itemlist.parentElement)
+itemlist.parentElement.style.background="gray"
+itemlist.parentElement.parentElement.style.background="yellow"

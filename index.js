@@ -38,7 +38,7 @@ for (let i=0;i<add3.length;i++){
 }
 
 //querySelector
-
+ddd
 let add4 = document.querySelectorAll('li')
 add4[1].style.background='green'
 add4[3].style.visibility="hidden"

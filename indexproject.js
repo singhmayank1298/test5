@@ -50,6 +50,32 @@ function delete1(e){
 }
  }
 
+//  ///////////////////////////
 
 
 
+let ullist =document.querySelector("#items")
+let fiter= document.querySelector("#filter")
+fiter.addEventListener("keyup",filter)
+
+
+function filter(e){
+// e.preventDefault()
+ let text= fiter.value.toUpperCase() //when listenen will call first it will stor the text in uppercase or lower that the user have type
+//console.log(text)
+ let itemlist = ullist.getElementsByTagName("li") //then it store all li in array
+
+ for(let i=0;i<itemlist.length;i++){ //we will checking full item list whenever user type only one cherecter for ex "i"then"it then it will check t is there in item list
+  
+   let findtext=itemlist[i].firstChild.textContent
+   
+   if(findtext.toUpperCase().indexOf(text)>-1){   //allways  only one cheracter is comming in indexof()(for ex. "t" have type) and it is checking the whole chrecter of the item one by one  if "t" is there in item then -1 become 1.it is hepping in this line only
+     
+     itemlist[i].style.display=""               // if itemlist have cherect
+    }
+    else{
+     itemlist[i].style.display="none"
+    }
+   console.log(findtext)
+ }
+}
